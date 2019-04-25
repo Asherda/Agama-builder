@@ -4,6 +4,8 @@ ARG INSTALL_COMPONENTS
 RUN apt-get update -qqy && apt-get install -qqy \
     curl \
     gcc \
+    g++ \
+    make \
     python-dev \
     python-setuptools \
     apt-transport-https \
