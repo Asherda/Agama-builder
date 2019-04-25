@@ -7,6 +7,8 @@ RUN apt-get update -qqy && apt-get install -qqy --no-install-recommends  apt-uti
     apt-get install -qqy --no-install-recommends \
     curl \
     gcc \
+    g++ \
+    make \
     python-dev \
     python-setuptools \
     apt-transport-https \
