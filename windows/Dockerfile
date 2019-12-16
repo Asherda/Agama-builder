@@ -18,7 +18,6 @@ RUN apt-get update -qqy && apt-get install -qqy --no-install-recommends  apt-uti
     unzip \
     zip && \
     apt-get -y update && apt-get -y install --install-recommends wine && \
-    easy_install -U pip && \
     pip install -U crcmod && \
     export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)" && \
     echo "deb https://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" > /etc/apt/sources.list.d/google-cloud-sdk.list && \
