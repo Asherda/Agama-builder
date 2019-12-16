@@ -16,7 +16,8 @@ RUN apt-get update -qqy && apt-get install -qqy --no-install-recommends  apt-uti
     openssh-client \
     git \
     unzip \
-    zip && \
+    zip \
+    python-pip && \
     apt-get -y update && apt-get -y install --install-recommends wine && \
     pip install -U crcmod && \
     export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)" && \
